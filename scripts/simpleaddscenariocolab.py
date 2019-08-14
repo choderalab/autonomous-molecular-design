@@ -246,7 +246,7 @@ class Experimenter():
         """
         if self.sampling_method == "highest_mean":
             #generate and store all predictions
-             predicted = np.zeros( (len(ground_truth_for_scoring),3) )
+            predicted = np.zeros( (len(ground_truth_for_scoring),3) )
             for key in self.ensemble.keys():
                 pred = self.ensemble[key].predict(ground_truth_for_scoring)
                 pred = transformer.untransform(pred) #undo normalization on outputs

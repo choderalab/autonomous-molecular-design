@@ -5,8 +5,6 @@ filepath = "./2019q1-2_Enamine_REAL_diversity_set_MFP2_512_0.6_8.5M_SMILES.smile
 number_smiles_desired = 100000
 subset_smiles = []
 
-mols_df = pd.DataFrame(subset_smiles, columns = ["SMILES"])
-
 #read in lines
 with open(filepath) as file:
     lines = file.readlines()[1:] #strip newlines and first line (headers)

@@ -1,4 +1,3 @@
-import pandas as pd
 import deepchem as dc
 
 bace_model = dc.models.GraphConvModel(n_tasks=1, mode='regression', batch_size=50, random_seed=0, model_dir="./models/bace")

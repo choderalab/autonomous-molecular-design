@@ -1,4 +1,3 @@
-import pandas as pd
 import deepchem as dc
 
 print("Restoring models...")
